@@ -169,12 +169,12 @@ def main():
     np.random.seed(666)
     a = 0.24900000000000014
     p_mean = []
-    path_to_img = r'C:\Users\vodnyy\PycharmProjects\watermarking\lab2\bridge.tif'
-    path_to_w_img = r'lab_3_watermarked.png'
+    path_to_img = r'C:\Users\Staval\PycharmProjects\Digital_watermarks\Lab_1\Files\goldhill.tif'
+    path_to_w_img = r'C:\Users\Staval\PycharmProjects\Digital_watermarks\Lab_2\watermarked_1.png'
     C = read_img(path_to_img)
     Cw = read_img(path_to_w_img)
     # omega = watermark_extraction(C, Cw, a)
-    omega = read_img(r"watermark.png")
+    omega = read_img(r"C:\Users\Staval\PycharmProjects\Digital_watermarks\Lab_1\Files\mickey.tif")
     orig_po = calc_po(C, Cw, omega, a)
     print("Original po =", orig_po)
     p_mean.append(task_1(C, Cw, omega, a, orig_po))
